@@ -2,7 +2,7 @@
 A Sokoban implementation in plain C using the SDL2 library.
 
 ### Background:
-This project was created by me and a colleague during my apprenticeship as a software engineer.
+This project was created by me and a nice colleague in one week of my apprenticeship as a software engineer.
 
 Levels had to be removed due to possible copyright problems, though there are plenty of websites where you can download free ones.
 
