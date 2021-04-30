@@ -226,7 +226,7 @@ uint32_t game_handleEvent(mapStruct_t* map, mapStruct_t* lastMap, SDL_Event even
 #endif _DEBUG
             }
             break;
-        case SDL_SCANCODE_1: //Go to next map.
+        case SDL_SCANCODE_1: //Go to prev map.
             printf("\nIT'S REWIND TIME\n\n");
             game_unloadMap(map, lastMap);
             map->currMapNum = (map->currMapNum > 0) ? (map->currMapNum - 1) : (LEVEL_COUNT - 1);
@@ -242,7 +242,7 @@ uint32_t game_handleEvent(mapStruct_t* map, mapStruct_t* lastMap, SDL_Event even
         case SDL_SCANCODE_ESCAPE:
             return MENU_SHOWN;
             break;
-        case SDL_SCANCODE_2: //Go to prev map.
+        case SDL_SCANCODE_2: //Go to next map.
             printf("\nSKIP\n\n");
             game_unloadMap(map, lastMap);
             map->currMapNum = (map->currMapNum + 1) % LEVEL_COUNT;
